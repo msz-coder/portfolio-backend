@@ -7,7 +7,11 @@ require("dotenv").config({ path: "../.env" });
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+const corsOptions = {
+  origin: ["http://localhost:3000"], // allow frontend dev
+};
+
+app.use(cors(corsOptions));
 
 app.get("/api/projects", (req, res) => {
   fs.readFile("./projects.json", "utf8", (err, data) => {
