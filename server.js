@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const corsOptions = {
-  origin: ["http://localhost:3000"], // allow frontend dev
+  origin: ["http://localhost:3000"],
 };
 
 app.use(cors(corsOptions));
