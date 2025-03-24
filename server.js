@@ -13,7 +13,9 @@ const PORT = process.env.PORT || 3001;
 
 // Allow local frontend during dev
 const corsOptions = {
-  origin: ["http://localhost:3000"], 
+  origin: ["http://localhost:3000",
+  "https://main.d1vidfdr0slgdn.amplifyapp.com" 
+  ]
 };
 
 app.use(cors(corsOptions));
