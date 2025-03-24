@@ -1,0 +1,62 @@
+[
+    {
+      "image": "/assets/images/hopeshealthcenter.jpeg",
+      "projectName": "HOPES Health Center",
+      "author": "Muhammad Shafay Zulfiqar",
+      "projectDesc": [
+        "Worked with React.js, Node.js, and MongoDB to improve their web application",
+        "Designed and developed wireframes & mockups",
+        "Integrated new features such as online project sign-up & activity scheduling",
+        "Conducted user testing and improved design based on feedback"
+      ],
+      "techStack": [
+        { "skillName": "React.js", "fontAwesomeClassname": "fab fa-react" },
+        { "skillName": "Node.js", "fontAwesomeClassname": "fab fa-node" },
+        { "skillName": "MongoDB", "fontAwesomeClassname": "fas fa-database" },
+        { "skillName": "Git", "fontAwesomeClassname": "fab fa-git-alt" }
+      ],
+      "footerLink": [
+        { "name": "Visit Website", "url": "https://hopeshealthcentre.net/" }
+      ]
+    },
+    {
+      "image": "/assets/images/trello.png",
+      "projectName": "Trello-Clone",
+      "author": "Muhammad Shafay Zulfiqar",
+      "projectDesc": [
+        "Built a Trello-like task management system using React.js, Spring Boot (Java), and MySQL",
+        "Implemented user authentication, task management, analytics, and notifications",
+        "Worked in an Agile team, using Git & Jira for collaboration"
+      ],
+      "techStack": [
+        { "skillName": "React.js", "fontAwesomeClassname": "fab fa-react" },
+        { "skillName": "Java", "fontAwesomeClassname": "fab fa-java" },
+        { "skillName": "MySQL", "fontAwesomeClassname": "fas fa-database" },
+        { "skillName": "Git", "fontAwesomeClassname": "fab fa-git-alt" }
+      ],
+      "footerLink": [
+        { "name": "Visit Website", "url": "https://github.com/msz-coder/Trello-Clone" }
+      ]
+    },
+    {
+      "image": "/assets/images/yelpcamp.webp",
+      "projectName": "Yelp Campground",
+      "author": "Muhammad Shafay Zulfiqar",
+      "projectDesc": [
+        "Developed a full-stack web application for users to create, review, and book campgrounds",
+        "Built with Node.js, Express.js, MongoDB, and EJS templating engine",
+        "Implemented user authentication and authorization using Passport.js",
+        "Integrated Google Maps API for interactive campground location display",
+        "Deployed on Heroku with Cloudinary for image storage"
+      ],
+      "techStack": [
+        { "skillName": "Node.js", "fontAwesomeClassname": "fab fa-node" },
+        { "skillName": "Express.js", "fontAwesomeClassname": "fas fa-server" },
+        { "skillName": "MongoDB", "fontAwesomeClassname": "fas fa-database" },
+        { "skillName": "Git", "fontAwesomeClassname": "fab fa-git-alt" }
+      ],
+      "footerLink": [
+        { "name": "Visit Website", "url": "https://github.com/msz-coder/YelpCamp" }
+      ]
+    }
+  ]
