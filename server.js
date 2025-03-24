@@ -1,9 +1,10 @@
+// server.js
 const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-// Only load .env in local dev (Heroku injects env vars automatically)
+// Load env vars only in dev
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
@@ -11,11 +12,20 @@ if (process.env.NODE_ENV !== "production") {
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Allow local frontend during dev
+// Dynamic CORS for local + AWS Amplify
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://main.d1vidfdr0slgdn.amplifyapp.com"
+];
+
 const corsOptions = {
-  origin: ["http://localhost:3000",
-  "https://main.d1vidfdr0slgdn.amplifyapp.com" 
-  ]
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("❌ Not allowed by CORS"));
+    }
+  }
 };
 
 app.use(cors(corsOptions));
