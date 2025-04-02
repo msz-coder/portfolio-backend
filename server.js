@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3001;
 // Dynamic CORS for local + AWS Amplify
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://main.d1vidfdr0slgdn.amplifyapp.com"
+  "https://main.d2ynrcyr60omrw.amplifyapp.com"
 ];
 
 const corsOptions = {
